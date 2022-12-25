@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 public class OpenWeatherCityCoordDto {
 
     @JsonProperty(value = "lat")
-    private int lat;
+    private float lat;
 
     @JsonProperty(value = "lon")
-    private int lon;
+    private float lon;
 }
