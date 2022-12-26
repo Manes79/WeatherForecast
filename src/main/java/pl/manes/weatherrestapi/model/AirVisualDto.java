@@ -1,8 +1,9 @@
-package pl.manes.weatherrestapi.webclient.weather.dto;
+package pl.manes.weatherrestapi.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JacksonStdImpl;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -10,12 +11,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JacksonStdImpl
-public class OpenWeatherDto {
+@Builder
+public class AirVisualDto {
 
-    @JsonProperty(value = "main")
-    private String main;
+    @JsonProperty(value = "Kraj")
+    private String country;
 
-    @JsonProperty(value = "description")
-    private String description;
+    @JsonProperty(value = "Nazwa województwa")
+    private String state;
 
 }
