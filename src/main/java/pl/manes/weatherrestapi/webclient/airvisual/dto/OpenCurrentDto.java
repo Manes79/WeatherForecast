@@ -10,9 +10,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JacksonStdImpl
-public class OpenNameCountryDto {
+public class OpenCurrentDto {
 
-    @JsonProperty(value = "country")
-    private String country;
+    @JsonProperty(value = "pollution")
+    private OpenPollutionDto pollution;
 
+    @JsonProperty(value = "weather")
+    private OpenWeatherDto weather;
 }

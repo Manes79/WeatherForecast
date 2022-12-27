@@ -10,9 +10,21 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JacksonStdImpl
-public class OpenProvinceNameDto {
+public class OpenWeatherDto {
 
-    @JsonProperty(value = "state")
-    private String state;
+    @JsonProperty(value = "ts")
+    private String ts;
+
+    @JsonProperty(value = "tp")
+    private int tp;
+
+    @JsonProperty(value = "pr")
+    private int pr;
+
+    @JsonProperty(value = "hu")
+    private int hu;
+
+    @JsonProperty(value = "ws")
+    private float ws;
 
 }

@@ -5,17 +5,15 @@ import com.fasterxml.jackson.databind.annotation.JacksonStdImpl;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import pl.manes.weatherrestapi.webclient.airvisual.dto.OpenProvinceNameDto;
-
-import java.util.List;
+import pl.manes.weatherrestapi.webclient.airvisual.dto.OpenDataDto;
 
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @JacksonStdImpl
-public class OpenAirVisualProvincesDto {
+public class OpenAirVisualWeatherAndPollutionDto {
 
     @JsonProperty(value = "data")
-    private List<OpenProvinceNameDto> data;
+    private OpenDataDto data;
 
 }

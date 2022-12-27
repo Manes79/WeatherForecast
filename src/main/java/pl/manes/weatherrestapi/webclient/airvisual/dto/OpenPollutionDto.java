@@ -1,21 +1,21 @@
-package pl.manes.weatherrestapi.webclient;
+package pl.manes.weatherrestapi.webclient.airvisual.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JacksonStdImpl;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import pl.manes.weatherrestapi.webclient.airvisual.dto.OpenNameCountryDto;
-
-import java.util.List;
 
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @JacksonStdImpl
-public class OpenAirVisualCountriesDto {
+public class OpenPollutionDto {
 
-    @JsonProperty(value = "data")
-    private List<OpenNameCountryDto> data;
+    @JsonProperty(value = "ts")
+    private String ts;
+
+    @JsonProperty(value = "aqicn")
+    private int aqicn;
 
 }

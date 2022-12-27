@@ -9,23 +9,14 @@ import pl.manes.weatherrestapi.service.AirVisualService;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("countries")
+@RequestMapping("cities")
 public class AirVisualController {
 
     private final AirVisualService airVisualService;
 
-    @GetMapping("/polska")
-    public AirVisualDto getCountryNamePoland(){
-        return airVisualService.getCountryNamePoland();
+    @GetMapping("/lublin")
+    public AirVisualDto getWeatherAndPollutionForCity() {
+        return airVisualService.getWeatherAndPollutionForCityLublin();
     }
 
-    @GetMapping("/province/wielkopolska")
-    public AirVisualDto getProvinceNameGreaterPoland(){
-        return airVisualService.getProvinceNameGreaterPoland();
-    }
-
-    @GetMapping("/province/malopolska")
-    public AirVisualDto getProvinceNameLesserPolandVoivodeship(){
-        return airVisualService.getProvinceNameGreaterPoland();
-    }
 }

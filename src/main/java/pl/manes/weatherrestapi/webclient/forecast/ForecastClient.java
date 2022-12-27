@@ -13,7 +13,12 @@ public class ForecastClient {
     private final RestTemplate restTemplate = new RestTemplate();
 
     public ForecastDto getForecastForProvince(double lat, double lon) {
-        OpenWeatherWeatherDto openWeatherWeatherDto = callGetMethod("forecast?lat={lat}&lon={lon}&appid={apiKey}&units=metric&lang=pl", OpenWeatherWeatherDto.class, lat, lon, API_KEY);
+        OpenWeatherWeatherDto openWeatherWeatherDto = callGetMethod
+                ("forecast?lat={lat}&lon={lon}&appid={apiKey}&units=metric&lang=pl",
+                        OpenWeatherWeatherDto.class,
+                        lat,
+                        lon,
+                        API_KEY);
 
         return ForecastDto.builder()
                 .name(openWeatherWeatherDto.getCity().getName())

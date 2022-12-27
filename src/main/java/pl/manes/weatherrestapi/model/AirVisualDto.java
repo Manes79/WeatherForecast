@@ -14,10 +14,34 @@ import lombok.NoArgsConstructor;
 @Builder
 public class AirVisualDto {
 
+    @JsonProperty(value = "Miasto")
+    private String city;
+
+    @JsonProperty(value = "Województwo")
+    private String state;
+
     @JsonProperty(value = "Kraj")
     private String country;
 
-    @JsonProperty(value = "Nazwa województwa")
-    private String state;
+    @JsonProperty(value = "Wskaźnik jakości powietrza")
+    private int aqicn;
+
+    @JsonProperty(value = "Data i godzina ostatniego pomiaru wskaźnika")
+    private String ts;
+
+    @JsonProperty(value = "Temperatura")
+    private int tp;
+
+    @JsonProperty(value = "Data i godzina ostatniego pomiaru temperatury")
+    private String temperature;
+
+    @JsonProperty(value = "Ciśnienie")
+    private int pr;
+
+    @JsonProperty(value = "Wilgotność")
+    private int hu;
+
+    @JsonProperty(value = "Wiatr")
+    private float ws;
 
 }

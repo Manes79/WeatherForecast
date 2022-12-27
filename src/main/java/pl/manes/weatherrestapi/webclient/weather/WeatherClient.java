@@ -13,7 +13,11 @@ public class WeatherClient {
     private final RestTemplate restTemplate = new RestTemplate();
 
     public WeatherDto getWeatherForCity(String city) {
-        OpenWeatherWeatherDto openWeatherWeatherDto = callGetMethod("weather?q={city}&appid={apiKey}&units=metric&lang=pl", OpenWeatherWeatherDto.class, city, API_KEY);
+        OpenWeatherWeatherDto openWeatherWeatherDto = callGetMethod
+                ("weather?q={city}&appid={apiKey}&units=metric&lang=pl",
+                        OpenWeatherWeatherDto.class,
+                        city,
+                        API_KEY);
 
         return WeatherDto.builder()
                 .main(openWeatherWeatherDto.getWeather().iterator().next().getMain())

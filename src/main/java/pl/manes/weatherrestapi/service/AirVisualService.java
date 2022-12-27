@@ -11,15 +11,7 @@ public class AirVisualService {
 
     private final AirVisualClient airVisualClient;
 
-    public AirVisualDto getCountryNamePoland() {
-        return airVisualClient.getCountryName("Poland");
-    }
-
-    public AirVisualDto getProvinceNameGreaterPoland() {
-        return airVisualClient.getProvinceName("Greater Poland");
-    }
-
-    public AirVisualDto getProvinceNameLesserPolandVoivodeship() {
-        return airVisualClient.getProvinceName("Lesser Poland Voivodeship");
+    public AirVisualDto getWeatherAndPollutionForCityLublin() {
+        return airVisualClient.getWeatherAndPollutionForCity("Lublin", "Lublin", "Poland");
     }
 }
