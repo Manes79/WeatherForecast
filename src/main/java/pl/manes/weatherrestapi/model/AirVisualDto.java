@@ -23,17 +23,14 @@ public class AirVisualDto {
     @JsonProperty(value = "Kraj")
     private String country;
 
+    @JsonProperty(value = "Lokalna data i godzina pomiaru")
+    private String ts;
+
     @JsonProperty(value = "Wskaźnik jakości powietrza")
     private int aqicn;
 
-    @JsonProperty(value = "Data i godzina ostatniego pomiaru wskaźnika")
-    private String ts;
-
     @JsonProperty(value = "Temperatura")
     private int tp;
-
-    @JsonProperty(value = "Data i godzina ostatniego pomiaru temperatury")
-    private String temperature;
 
     @JsonProperty(value = "Ciśnienie")
     private int pr;

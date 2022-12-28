@@ -15,8 +15,23 @@ public class AirVisualController {
     private final AirVisualService airVisualService;
 
     @GetMapping("/lublin")
-    public AirVisualDto getWeatherAndPollutionForCity() {
-        return airVisualService.getWeatherAndPollutionForCityLublin();
+    public AirVisualDto getWeatherAndPollutionForBiggestCityInStateLublin() {
+        return airVisualService.getWeatherAndPollutionForBiggestCityInStateLublin();
+    }
+
+    @GetMapping("/lubelskie/bialapodlaska")
+    public AirVisualDto getWeatherAndPollutionForCityBialaPodlaskaInStateLublin() {
+        return airVisualService.getWeatherAndPollutionForCityBialaPodlaskaInStateLublin();
+    }
+
+    @GetMapping("/warszawa")
+    public AirVisualDto getWeatherAndPollutionForBiggestCityInStateWarszawa() {
+        return airVisualService.getWeatherAndPollutionForBiggestCityInStateWarszawa();
+    }
+
+    @GetMapping("/krakow")
+    public AirVisualDto getWeatherAndPollutionForBiggestCityInStateKrakow() {
+        return airVisualService.getWeatherAndPollutionForBiggestCityInStateKrakow();
     }
 
 }

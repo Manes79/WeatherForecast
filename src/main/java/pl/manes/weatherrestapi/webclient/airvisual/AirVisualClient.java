@@ -16,7 +16,7 @@ public class AirVisualClient {
     public AirVisualDto getWeatherAndPollutionForCity(String city, String state, String country) {
 
         OpenAirVisualWeatherAndPollutionDto openAirVisualWeatherAndPollutionDto = callGetMethodWeatherAndPollution
-                ("city?city={city}&state={state}&country={country}&key={key}&units=metric&lang=pl",
+                ("city?city={city}&state={state}&country={country}&key={key}",
                         OpenAirVisualWeatherAndPollutionDto.class,
                         city,
                         state,
@@ -30,7 +30,6 @@ public class AirVisualClient {
                 .aqicn(openAirVisualWeatherAndPollutionDto.getData().getCurrent().getPollution().getAqicn())
                 .ts(openAirVisualWeatherAndPollutionDto.getData().getCurrent().getPollution().getTs())
                 .tp(openAirVisualWeatherAndPollutionDto.getData().getCurrent().getWeather().getTp())
-                .temperature(openAirVisualWeatherAndPollutionDto.getData().getCurrent().getWeather().getTs())
                 .pr(openAirVisualWeatherAndPollutionDto.getData().getCurrent().getWeather().getPr())
                 .hu(openAirVisualWeatherAndPollutionDto.getData().getCurrent().getWeather().getHu())
                 .ws(openAirVisualWeatherAndPollutionDto.getData().getCurrent().getWeather().getWs())

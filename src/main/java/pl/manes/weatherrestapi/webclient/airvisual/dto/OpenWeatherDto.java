@@ -12,9 +12,6 @@ import lombok.NoArgsConstructor;
 @JacksonStdImpl
 public class OpenWeatherDto {
 
-    @JsonProperty(value = "ts")
-    private String ts;
-
     @JsonProperty(value = "tp")
     private int tp;
 
