@@ -5,15 +5,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import pl.manes.weatherrestapi.service.AirVisualService;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("/weather")
+@RequestMapping("/cities")
 public class AirVisualViewController {
 
-    @GetMapping
-    public String viewHomeSite(Model model) {
+    private final AirVisualService airVisualService;
 
+    @GetMapping("/warszawa")
+    public String viewWeatherAndPollutionForBiggestCityInMazoviaState(Model model) {
+
+        model.addAttribute("city", airVisualService.getWeatherAndPollutionForBiggestCityInStateMazovia());
 
         return "weather/index";
     }
