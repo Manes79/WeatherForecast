@@ -19,6 +19,19 @@ public class AirVisualViewController {
 
         model.addAttribute("city", airVisualService.getWeatherAndPollutionForBiggestCityInStateMazovia());
 
-        return "weather/index";
+
+        return "cities/warsaw";
+    }
+
+    @GetMapping("/index")
+    public String viewHomeSiteMap() {
+
+        return "index";
+    }
+
+    @GetMapping("/lubelskie")
+    public String viewLubelskieSiteMap() {
+
+        return "states/lubelskie";
     }
 }
