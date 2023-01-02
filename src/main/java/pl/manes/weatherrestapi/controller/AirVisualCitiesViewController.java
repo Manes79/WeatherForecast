@@ -10,7 +10,7 @@ import pl.manes.weatherrestapi.service.AirVisualService;
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/cities")
-public class AirVisualViewController {
+public class AirVisualCitiesViewController {
 
     private final AirVisualService airVisualService;
 
@@ -21,17 +21,5 @@ public class AirVisualViewController {
 
 
         return "cities/warsaw";
-    }
-
-    @GetMapping("/index")
-    public String viewHomeSiteMap() {
-
-        return "index";
-    }
-
-    @GetMapping("/lubelskie")
-    public String viewLubelskieSiteMap() {
-
-        return "states/lubelskie";
     }
 }
