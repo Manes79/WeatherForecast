@@ -1,4 +1,4 @@
-package pl.manes.weatherrestapi.model;
+package pl.manes.weatherrestapi.domain.Dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JacksonStdImpl;

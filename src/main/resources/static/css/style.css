@@ -1,28 +1,40 @@
-.navbar-bottom {
-    background-color: #ffffff;
-    font-family: "Helvetica Neue", fantasy;
-    font-size: 40px;
-    color: #ca0101;
-}
-
-.body-background {
-    padding-top: 10px;
-    height: 10vh;
-    background-color: #ffffff;
-}
-
-* {
-    margin: 10px;
-    padding: 0;
+.header {
+    background-image: url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?w=1380&t=st=1673038042~exp=1673038642~hmac=0f6d5ced927407bab353eb01ac387717f4a5cafda020b0978235365e3872ba44);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     box-sizing: border-box;
-    background-color: #ffffff;
-    font-family: "Calibri Light", sans-serif;
-    font-size: 16px;
-    color: #c3bfbf;
+    opacity: initial;
+    padding: 115px;
+    font-family: "Helvetica Neue", fantasy;
+    font-size: 100px;
+    color: #cec9c9;
+    text-align: -webkit-left;
+    running: initial;
 }
 
-body {
-    position: relative;
-    font-size: 16px;
-    color: #c3bfbf;
-}
+/*.navbar-bottom {*/
+/*    font-family: "Helvetica Neue", fantasy;*/
+/*    font-size: 40px;*/
+/*    color: #ca0101;*/
+/*}*/
+
+/*.body-background {*/
+/*    padding-top: 10px;*/
+/*    height: 10vh;*/
+/*}*/
+
+/** {*/
+/*    margin: 10px;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*    font-family: "Calibri Light", sans-serif;*/
+/*    font-size: 16px;*/
+/*    color: #b91010;*/
+/*}*/
+
+/*body {*/
+/*    position: relative;*/
+/*    font-size: 16px;*/
+/*    !*color: #c3bfbf;*!*/
+/*}*/

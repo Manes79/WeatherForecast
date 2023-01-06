@@ -2,7 +2,7 @@ package pl.manes.weatherrestapi.webclient.airvisual;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import pl.manes.weatherrestapi.model.AirVisualDto;
+import pl.manes.weatherrestapi.domain.Dto.AirVisualDto;
 import pl.manes.weatherrestapi.webclient.OpenAirVisualWeatherAndPollutionDto;
 
 @Component
